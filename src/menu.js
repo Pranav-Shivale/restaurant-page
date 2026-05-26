@@ -24,7 +24,11 @@ const loadItem = (menuRow, imgSrc, itemPriceContent) => {
 
 export default () => {
   contentDiv.replaceChildren();
-  
+
+  const menuTitle = document.createElement("h1");
+  menuTitle.textContent = "Menu";
+  contentDiv.appendChild(menuTitle);
+
   const menuRowOne = document.createElement("div");
   menuRowOne.classList.add("menu-row");
 
